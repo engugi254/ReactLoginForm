@@ -10,7 +10,7 @@ const ThemeContext = () => {
   return (
     <div className={theme}>
       <button type="button" onClick={toggleTheme}>
-        Toggle Theme
+        {theme === "light" ? "Dark Mode" : "Light Mode"}
       </button>
       <h1>{theme === "light" ? "Light Mode" : "Dark Mode"}</h1>
     </div>
